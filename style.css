@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  width: 100%;
+  background: linear-gradient(45deg, #010758, #490d61);
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+textarea {
+  width: 50%;
+  height: 200px;
+  background: #403d84;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+textarea::placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.row select {
+  flex: 1;
+}
+
+.row button {
+  width: 150px;
+  height: 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #ff2963;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btn img {
+  margin-right: 10px;
+}
+
+select {
+  background-color: #403d84;
+  border-radius: 45px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+  background-image: url(/images/dropdown.png);
+  background-repeat: no-repeat;
+  appearance: none;
+  background-position-x: 97%;
+  background-position-y: 13px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .row button {
+    width: 130px;
+    height: 45px;
+  }
+
+  .row {
+    display: flex;
+    width: 80%;
+  }
+}
